@@ -1,0 +1,1 @@
+company_template2_solo
