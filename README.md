@@ -1,1 +1,2 @@
-company_template2_solo
+company_template2_solo<br>
+using jQuery, Bootstrap
