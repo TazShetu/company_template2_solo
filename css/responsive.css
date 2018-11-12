@@ -1,0 +1,778 @@
+/*write only @media (max-width: 575px), do not need min-width. This way we wont need to write same css in 2 parts of @media. here we did not use this tric thats why its too big */
+
+
+
+/*screen resulation gula bootstrap webpage thake nea*/
+
+/*--------Extralarge devices---------*/
+/*@media (min-width: 1200px) {
+    #home-heading h1 {
+        color: aqua;
+    }
+}*/
+
+/*--------Large devices---------*/
+/*------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .vertical-heading h2 {
+        font-size: 29px;
+        margin: 0 0 0 20px;
+    }
+    .vertical-heading h5 {
+        word-spacing: 5px;
+    }
+    
+    /*-----services part 2----*/
+    .service-tab .tab-bg {
+        padding: 16px 30px;
+        min-height: 395px;
+    }
+    
+    .service-tab p {
+        line-height: 20px;
+    }
+    
+}
+
+
+/*--------Medium devices---------*/
+/*-------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-back-to-top {
+        font-size: 18px;
+        padding: 0 10px;
+        bottom: 5px;
+        right: 2px;
+    }
+    
+    /*-----Button--------*/
+    .btn-general {
+        padding: 8px 35px;
+        font-size: 10px;
+    }
+    
+    /*------content box----*/
+    .content-box-lg {
+        padding: 100px 0;
+    }
+    .content-box-md {
+        padding: 85px 0;
+    }
+    
+    /*-----vertical headaing----*/
+    .vertical-heading h2 {
+        font-size: 29px;
+        margin: 0 0 0 20px;
+    }
+    .vertical-heading h5 {
+        word-spacing: 5px;
+    }
+    
+    /*-----horizontal heading-----*/
+    .horizontal-heading {
+        margin-bottom: 60PX;    
+    }
+   
+    
+    /*------HOME-----*/
+    #home-heading h1 {
+        font-size: 41px;
+    }
+    
+    #home-text p {
+        font-size: 13px;
+    }   
+    
+    
+    /*-----Statement------*/
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    /*----------services tab (part 2)----------*/
+    /*class name chrome inspect kore paoa*/
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /*a same as before(responsive tab jquery medium screen a jhamela korai aber lika lagse)*/
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;transition: border-color 300ms linear;
+    }
+    .service-tab .tab-bg {
+        text-align: center;
+        padding: 50px 40px;
+    }
+    .service-tab h2 {
+        font-size: 44px;
+    }
+    .service-tab h3 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    
+    /*--------Testimonials--------*/
+    .testimonial p {
+        text-align: center;
+    }
+    
+    /*----------pricing----------*/
+    .pricing-table .price h2 {
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+    
+    /*------------stat--------------*/
+    .stats-item p {
+       line-height: 18px; 
+    }
+    
+    /*------------Blog------------*/
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+    
+    /*--------contact-------*/
+    #contact-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #contact-left .vertical-heading {
+        text-align: center;
+    }
+    #contact-left .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);transform: rotate(0deg);
+        /*tecnique to position it at top(default position)*/
+        display: block;
+        position: static; /*by default static e thake*/
+        margin-bottom: 15px;
+    }
+    #contact-left .vertical-heading h2 {
+        line-height: normal;
+        margin: 0;
+    }
+    #offices .office h4 {
+        margin-left: -120px;
+    }
+    
+}
+
+
+/*-------------------------------------------------------*/
+/*--------------------Small devices----------------------*/
+/*-------------------------------------------------------*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .btn-back-to-top {
+        font-size: 15px;
+        padding: 0 10px;        
+        bottom: 3px;
+        right: 0;
+    }
+    
+    /*-------navbar----------*/
+    .navbar {
+        
+    }
+    
+    
+    /*--------Button--------*/
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+    
+    /*-------content box-----*/
+    .content-box-lg {
+        padding: 90px 0;
+    }
+    .content-box-md {
+        padding: 70px 0;
+    }
+        
+    /*-----vertical heading-----*/
+    .vertical-heading {
+        text-align: center;
+    }
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);transform: rotate(0deg);
+        /*tecnique to position it at top(default position)*/
+        display: block;
+        position: static; /*by default static e thake*/
+        margin-bottom: 15px;
+    }
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    } 
+    
+    /*-----horizontal heading-----*/
+    .horizontal-heading {
+        margin-bottom: 40PX;    
+    }
+    .horizontal-heading h2 {
+        font-size: 29px;        
+    }
+    .horizontal-heading h5 {
+        font-size: 14px;
+    }
+
+    
+    /*----------HOME---------*/
+    #home-heading h1 {
+        font-size: 22px;
+    }
+    
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 10px 30px 10px;
+    }    
+    
+    
+    /*-------about(part 1)-------*/
+    #about-left {
+        margin-bottom: 40px;
+    }
+    #about-right p {
+        text-align: center;
+    }
+    
+    /*-------about(part 2)-------*/
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 25px;
+    }
+    .about-item svg {
+        font-size: 30px;
+    }
+    .about-item h3 {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+    
+    
+    /*------------team-----------*/
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+    #team-left p {
+        text-align: center;
+    }
+    .skill h4 {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+    
+    
+    /*------------Statement--------*/
+    #tech-statement h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    
+    /*--------Services (part 1)------*/
+    .service {
+        text-align: center;
+    }
+    .service .icon {
+        text-align: center !important;
+    }
+    .service h4 {
+        font-size: 18px;
+        margin: 0 0 6px 0;
+    }
+    .service:hover .icon {
+        -webkit-transform: translateY(-17px);transform: translateY(-17px);
+    }
+    
+    
+    /*-------------services tab (part 2)------------*/
+    /*class name chrome inspect kore paoa*/
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /*a same as before(responsive tab jquery medium screen a jhamela korai aber lika lagse)*/
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;transition: border-color 300ms linear;
+    }
+    .service-tab .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+    .service-tab h2 {
+        font-size: 40px;
+    }
+    .service-tab h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    
+    /*-----------------work--------------*/
+    #portfolio {
+        padding-bottom: 0;
+    }
+    #isotope-filters-btn {
+        text-align: center;
+    }
+    #isotope-filters-btn button {
+        padding-right: 28px;
+    }
+    
+    
+    /*--------------Testimonials-------------*/
+    #testimonials {
+        padding-top: 45px;
+    }
+    #testimonial-slider-carousel {
+        top: 0;
+    }
+    #testimonials .vertical-heading {
+        padding: 0;
+    }
+    .testimonial .row {
+        margin: 0;
+    }
+    .testimonial h3 {
+        font-size: 20px;
+    }
+    .testimonial p {
+        text-align: center;
+    }
+    .testimonial .stars {
+        font-size: 16px;
+        margin: 5px;
+    }
+    .author img {
+        width: 80px !important;
+    }
+    
+    
+    /*------------Pricing-----------*/
+    .pricing-table {
+        margin-bottom: 25px;
+    }
+    .pricing-table .price h2 {
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+    
+    
+    /*-------------Stat------------*/
+    .stats-item {
+        margin-bottom: 20px;
+    }
+    .stats-item svg {
+        font-size: 30px;
+        margin: 0 0 4px 0;
+    }
+    .stats-item h3 {
+        font-size: 24px;
+        margin: 4px 0;
+    }
+    
+    
+    /*------------Clint------------*/
+    #client-list {
+        padding: 0;
+    }
+    
+    
+    /*------------Blog------------*/
+    #blog-left {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .blog-post {
+        margin-bottom: 20px;
+    }
+    
+    
+    /*--------contact-------*/
+    #contact-left {
+        text-align: center;
+    }
+    #offices .office {
+        padding: 15px;
+    }
+    ul.social-list {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    
+    
+    /*--------footer-------*/
+    footer {
+        padding: 10px;
+    }
+    footer p {
+        line-height: 10px;
+    }
+    
+}
+
+
+/*-----------------------------------------------------*/
+/*-------------------ExtraSmall devices----------------*/
+/*-----------------------------------------------------*/
+@media (max-width: 575px) {
+    #back-to-top {
+        display: none !important;
+    }
+    
+    /*--------Button--------*/
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+    
+    /*-------content box-----*/
+    .content-box-lg {
+        padding: 90px 0;
+    }
+    .content-box-md {
+        padding: 70px 0;
+    }
+        
+    /*-----vertical heading-----*/
+    .vertical-heading {
+        text-align: center;
+    }
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);transform: rotate(0deg);
+        /*tecnique to position it at top(default position)*/
+        display: block;
+        position: static; /*by default static e thake*/
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .vertical-heading h2 {
+        font-size: 24px;
+        line-height: normal;
+        margin: 0;
+    } 
+    
+    /*-----horizontal heading-----*/
+    .horizontal-heading {
+        margin-bottom: 40PX;    
+    }
+    .horizontal-heading h2 {
+        font-size: 29px;        
+    }
+    .horizontal-heading h5 {
+        font-size: 14px;
+    }
+
+    
+    /*----------HOME---------*/
+    #home-heading h1 {
+        font-size: 18px;
+    }
+    
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }    
+    
+    
+    /*-------about(part 1)-------*/
+    #about-left {
+        margin-bottom: 40px;
+    }
+    #about-right p {
+        text-align: center;
+    }
+    
+    /*-------about(part 2)-------*/
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 25px;
+    }
+    .about-item svg {
+        font-size: 30px;
+    }
+    .about-item h3 {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+    
+    
+    /*------------team-----------*/
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+    #team-left p {
+        text-align: center;
+    }
+    .skill h4 {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+    
+    
+    /*------------Statement--------*/
+    #tech-statement h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    
+    /*--------Services (part 1)------*/
+    .service {
+        text-align: center;
+    }
+    .service .icon {
+        text-align: center !important;
+    }
+    .service h4 {
+        font-size: 18px;
+        margin: 0 0 6px 0;
+    }
+    .service:hover .icon {
+        -webkit-transform: translateY(-17px);transform: translateY(-17px);
+    }
+    
+    
+    /*-------------services tab (part 2)------------*/
+    /*class name chrome inspect kore paoa*/
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /*a same as before(responsive tab jquery medium screen a jhamela korai aber lika lagse)*/
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;transition: border-color 300ms linear;
+    }
+    .service-tab .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+    .service-tab h2 {
+        font-size: 40px;
+    }
+    .service-tab h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    
+    /*-----------------work--------------*/
+    #portfolio {
+        padding-bottom: 0;
+    }
+    #isotope-filters-btn {
+        text-align: center;
+    }
+    #isotope-filters-btn button {
+        padding-right: 12px;
+        font-size: 10px;
+    }
+    
+    
+    /*--------------Testimonials-------------*/
+    #testimonials {
+        padding-top: 45px;
+    }
+    #testimonial-slider-carousel {
+        top: 0;
+    }
+    #testimonials .vertical-heading {
+        padding: 0;
+    }
+    .testimonial .row {
+        margin: 0;
+    }
+    .testimonial h3 {
+        font-size: 13px;
+    }
+    .testimonial p {
+        text-align: center;
+        font-size: 12px;
+    }
+    .testimonial .stars {
+        font-size: 13px;
+        margin: 5px;
+    }
+    .author img {
+        width: 80px !important;
+    }
+    
+    
+    /*------------Pricing-----------*/
+    .pricing-table {
+        margin-bottom: 25px;
+    }
+    .pricing-table .price h2 {
+        font-size: 28px;
+        margin: 0 0 0 16px;
+    }
+    
+    
+    /*-------------Stat------------*/
+    .stats-item {
+        margin-bottom: 20px;
+    }
+    .stats-item svg {
+        font-size: 30px;
+        margin: 0 0 4px 0;
+    }
+    .stats-item h3 {
+        font-size: 24px;
+        margin: 4px 0;
+    }
+    
+    
+    /*------------Clint------------*/
+    #client-list {
+        padding: 0;
+    }
+    
+    
+    /*------------Blog------------*/
+    #blog-left {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .blog-post {
+        margin-bottom: 20px;
+    }
+    
+    
+    /*--------contact-------*/
+    #contact-left {
+        text-align: center;
+    }
+
+/*
+    #contact-left p {
+        text-align: center;
+    }    
+    #contact-left > ul {
+        text-align: center;
+    }
+    #offices .col-12 ul {
+        margin-left: auto !important;
+    }
+*/
+    
+    
+    
+    
+    #offices .office {
+        padding: 15px;
+    }
+    ul.social-list {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    
+    
+    /*--------footer-------*/
+    footer {
+        padding: 10px;
+    }
+    footer p {
+        line-height: 10px;
+    }
+    
+}
+    
+    
+
+
+/*----------------Iphone 5-----------------------------*/
+@media (max-width: 320px) {
+    #isotope-filters-btn button {
+        padding-right: 7px;
+        font-size: 9px;
+    }
+    .testimonial h3 {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .testimonial p {
+        font-size: 11px;
+    }
+    .testimonial .stars {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
